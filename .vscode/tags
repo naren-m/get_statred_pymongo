@@ -1,0 +1,15 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/9b2eec5/
+getCollection	../sample.py	/^def getCollection(db, collectionName):$/;"	kind:function	line:15
+getCollectionNamesFromDB	../sample.py	/^def getCollectionNamesFromDB(db):$/;"	kind:function	line:19
+getDatabase	../sample.py	/^def getDatabase(client, dbName):$/;"	kind:function	line:12
+getMongoClient	../sample.py	/^def getMongoClient():$/;"	kind:function	line:9
+insertManyDocsToCollection	../sample.py	/^def insertManyDocsToCollection(collection, docs):$/;"	kind:function	line:25
+insertOneDocToCollection	../sample.py	/^def insertOneDocToCollection(collection, doc):$/;"	kind:function	line:22
+main	../sample.py	/^def main():$/;"	kind:function	line:29
+sample.py	../sample.py	1;"	kind:file	line:1
