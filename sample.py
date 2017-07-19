@@ -24,6 +24,9 @@ def insertOneDocToCollection(collection, doc):
 def insertManyDocsToCollection(collection, docs):
     return collection.insert_many(docs)
 
+def findDocs(collection, whereCondition):
+    return collection.find(whereCondition)
+
 def main():
     post = {"author": "Mike",
             "text": "My first blog post!",
@@ -59,11 +62,13 @@ def main():
     print "Count of all posts", collection.count()
 
     # Count of posts by Mike
-    print "Count of posts by Mike", collection.find({"author": "Mike"}).count()
+    whereCondition = {"author": "Mike"}   
+    print "Count of posts by Mike", findDocs(collection, whereCondition).count()
 
     # Range Queries 
     d = datetime.datetime(2009, 11, 12, 12)
-    for post in collection.find({"date": {"$lt": d}}).sort("author"):
+    whereCondition = {"date": {"$lt": d}}
+    for post in findDocs(collection, whereCondition).sort("author"):
         pprint.pprint(post)
 
     client.close()
